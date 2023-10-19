@@ -1,7 +1,30 @@
-
-
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Mono&family=Roboto:ital,wght@1,300&display=swap');
+  
+  :root{
+    --background-primary: #1d1f34; 
+    --background-secondary:#34353f;
+    --background-tertiary:#120907;
+    --background-quaternary:#faebd7; 
+    --font-color-primary:#c9d9ed;
+    --font-color-secondary:#c9d9ed;
+    --button-color-primary:#737999;
+    --button-color-secondary:#ef4335;
+    --button-color-hover-primary: #596188; 
+    --button-color-hover-secondary:#f68b36;
+}
 
+[data-theme="light-theme"]{
+    --background-primary:#bec2a8;
+    --background-secondary:#efecde;
+    --background-tertiary:#091226;
+    --background-quaternary:#f9f9f9;
+    --font-color-primary:#34353f;
+    --font-color-secondary:#091226;
+    --button-color-primary:#efecde;
+    --button-color-secondary:#ef4335;
+    --button-color-hover-primary: #bec2a8; 
+    --button-color-hover-secondary:#f68b36;
+}
 
 @media screen and (min-width:320px){
     *{
@@ -10,30 +33,26 @@
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
         font-family: 'Roboto', sans-serif;
-        font-family: 'Roboto Mono', monospace;; 
+        font-family: 'Roboto Mono', monospace;;
         text-align: center;
         list-style: none;
         cursor: pointer;
     }
-    /* }
-    paleta de color 
-    .color1 {color: #120907;}
-    .color2 {color: #1d1f34;}
-    .color3 {color: #505988;}
-    .color4 {color: #8d9ae3;}
-    .color5 {color: #c9d9ed;} */
+    body{
+        background-color: var(--background-secondary);
+    }
     .header{
         width: 100%;
         display: flex;
-        background-color: #1d1f34;
+        background-color: var(--background-primary) ;
         text-align: center;
         flex-direction: column;
     }
     .header-title{
         width: 100%;
         font-size: 1 rem;
-        color: #c9d9ed;
-        text-shadow:#120907 2px 2px;
+        color:var(--font-color-primary);
+        text-shadow:var(--background-tertiary) 2px 2px;
         justify-content: center;
         align-items: center;
         padding: 20px;
@@ -49,56 +68,55 @@
         margin: 5px;
         padding: 5px;
         border-radius: 10%;
-        background-color:#737999;
-        color:#c9d9ed;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
         font-size: 1em;
-                                
+
     }
     .button:hover{
-        background-color: #596188;
+        background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
-       
+
     }
     .container-meme{
         display: flex;
         justify-content: center;
-        
+        margin-top: 20px;
+
     }
     .div-meme{
         width: 300px;
         max-width: 80%;
         height:300px ;
-        background-color: #120907;
+        background-color: var(--background-tertiary);
         display: flex;
-        border: red 5px solid ;
+        border: var(--background-tertiary) 2px solid ;
         flex-direction: column;
-           
-    }
-    .meme-text1{
-       
-        height: 20%;
-        border: blue 2px solid ;
-        background-color: antiquewhite;
-       
 
     }
+    .meme-text1{
+
+        height: 20%;
+        border: var(--background-tertiary) 2px solid ;
+        background-color:var(--background-quaternary) ;
+        text-align: center;
+    }
     .meme-image{
-       
+
         height: 200px;
-        border: green 2px solid;
+        border: var(--background-tertiary) 2px solid;
     }
     .meme-text2{
         height: 20%;
-        border: yellow 2px solid;
-        background-color: antiquewhite;
-        
+        border: var(--background-tertiary) solid;
+        background-color: var(--background-quaternary);
+    }
 
-    }        
-   
-    }      
+    
     .meme-panel-image{
         float:right;
         display:none;
+        font-size: 1em;
     }
     .meme-panel-text{
         float:right;
@@ -107,14 +125,15 @@
     .btn-download{
         margin: 15px;
         padding: 15px;
-        background-color: orangered;
-        color: #c9d9ed;
+        background-color:var(--button-color-secondary);
+        color:var(--background-quaternary);
         font-size: 1em;
     }
     .btn-download:hover{
-        background-color: rgb(235, 65, 3) ;
+        background-color: var(--button-color-hover-secondary) ;
         transition: all .3s ease;
     }
+}
 /* }
 @media screen and (min-width:672px){ */
 /* .button{
@@ -124,6 +143,6 @@
     background-color:#737999;
     color:#c9d9ed;
     font-size: 1em;
-                            
-} 
+
+}
 }*/
