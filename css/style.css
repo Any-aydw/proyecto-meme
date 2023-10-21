@@ -16,7 +16,7 @@
 [data-theme="light-theme"]{
     --background-primary:#bec2a8;
     --background-secondary:#efecde;
-    --background-tertiary:#091226;
+    --background-tertiary:#120907;
     --background-quaternary:#f9f9f9;
     --font-color-primary:#34353f;
     --font-color-secondary:#091226;
@@ -71,12 +71,22 @@
         background-color:var(--button-color-primary);
         color:var(--font-color-secondary);
         font-size: 1em;
-
+    }
+    .button-theme{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10%;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
+        font-size: 1em;
     }
     .button:hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
-
+    }
+    .button-theme:hover{
+        background-color: var(--button-color-hover-primary);
+        transition: all .3s ease;
     }
     .container-meme{
         display: flex;
@@ -102,7 +112,6 @@
         text-align: center;
     }
     .meme-image{
-
         height: 200px;
         border: var(--background-tertiary) 2px solid;
     }
@@ -111,11 +120,9 @@
         border: var(--background-tertiary) solid;
         background-color: var(--background-quaternary);
     }
-
-    
     .meme-panel-image{
-        float:right;
-        display:none;
+        /* float:right;
+        display:none; */
         font-size: 1em;
     }
     .meme-panel-text{
