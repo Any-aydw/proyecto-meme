@@ -43,8 +43,37 @@
         <button class="btn-download">descargar meme</button>
       <aside class="meme-panel-image">
           <h2>Imagen</h2>
+          
+          <label for="URL">URL</label>
           <input type="text">
-          <label for=""></label>
+          <label for="fondo">FONDO</label>
+
+          <input type="color" name="color" id="color">
+          
+          <h3>FILTROS</h3>
+         <div class="form-group">
+          <label for="">Blur</label>
+          <input type="range" name="range" id="blur" min="0" max="1" step="0.1">
+          <label for="">Opacidad</label>
+          <input type="range" name="range" id="opacidad" min="0" max="1" step="0.1">
+          <label for="">Contraste</label>
+          <input type="range" name="range" id="contraste" min="100%" max="1000%" step="1%">
+          <label for="">Desenfoque</label>
+          <input type="range" name="range" id="Desenfoque" min="0px" max="10px" step="0.1px">
+          <label for="">Escala de grises</label>
+          <input type="range" name="range" id="Escala de grises" min="0%" max="100%" step="1%">
+          <label for="">Sepia</label>
+          <input type="range" name="range" id="Sepia" min="0%" max="100%" step="1%">
+          <label for="">Hue</label>
+          <input type="range" name="range" id="Hue" min="0 deg" max="359 deg" step="1 deg">
+          <label for="">Saturado</label>
+          <input type="range" name="range" id="Saturado" min="100%" max="1000%" step="10%">
+          <label for="">Negativo</label>
+          <input type="range" name="range" id="Negativo" min="0" max="1" step="0.1">
+        </div>
+          <button class="btn-filtros">Restablecer Filtros</button>
+
+          
 
        </aside>
        <aside class="meme-panel-text">

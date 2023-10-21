@@ -121,13 +121,27 @@
         background-color: var(--background-quaternary);
     }
     .meme-panel-image{
+       width: 75%;
         /* float:right;
         display:none; */
         font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
     }
     .meme-panel-text{
         float:right;
         display: none;
+    }
+    .btn-filtros{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10%;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
+        font-size: 1em; 
     }
     .btn-download{
         margin: 15px;
