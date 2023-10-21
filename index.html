@@ -13,43 +13,43 @@
     <title>Proyecto-meme</title>
 </head>
 <body >
+    <!-- Header -->
     <header class="header">
       <div class="header-title">
-    <h1>Generador de memes</h1>
+       <h1>Generador de memes</h1>
       </div>  
-     
-   
       <div class="container-button">
-          <button class="button" >Imagen</button>
-          <button class="button">Texto</button>
-          <button class="button-theme">Modo oscuro</button >
-            
-       </div>
+        <button class="button" >Imagen</button>
+        <button class="button">Texto</button>
+        <button class="button-theme">Modo oscuro</button >
+      </div>
     </header> 
-       <main>
+    <main>
+      <!-- Contenedor divs  meme -->
         <div class="container-meme">
           <div class="div-meme"> 
-            <div class="meme-text1"  >
-              <p >inserte texto</p>
+            <div class="meme-text1">
+              <p class="top-text"></p>
             </div>
             <div class="meme-image">
-             <img src="" alt="">   
             </div>
             <div class="meme-text2">
-              <p >inserte texto</p>
+              <p class="bottom-text">BOTTOM TEXT</p>
             </div>
           </div>
         </div>
         <button class="btn-download">descargar meme</button>
+        <!-- aside Imagen -->
       <aside class="meme-panel-image">
           <h2>Imagen</h2>
           
           <label for="URL">URL</label>
-          <input type="text">
-          <label for="fondo">FONDO</label>
-
-          <input type="color" name="color" id="color">
+          <input type="text" name="text" id="text">
+         
+           <!-- <label for="fondo">FONDO</label>
+           <input type="color" name="color" id="color"> -->
           
+         </div>
           <h3>FILTROS</h3>
          <div class="form-group">
           <label for="">Blur</label>
@@ -72,15 +72,45 @@
           <input type="range" name="range" id="Negativo" min="0" max="1" step="0.1">
         </div>
           <button class="btn-filtros">Restablecer Filtros</button>
-
-          
-
-       </aside>
-       <aside class="meme-panel-text">
+      </aside>
+      <!-- aside de Texto -->
+      <aside class="meme-panel-text">
          <h2>Texto</h2>
+         <div class="form-group-2">
+           <label for="text">TOP TEXT</label>
+           <input type="text" placeholder="Escribe el texto" name="text" id="text">
+           <label for="text">Suprimir texto superior</label>
+           <input type="checkbox" >
+           <label for="text">BOTTOM TEXT</label>
+           <input type="text" placeholder="Escribe el texto" name="text" id="text">
+           <label for="text">Suprimir texto inferior</label>
+           <input type="checkbox" >
+           <div class="fuentes">
+             <label for="text">FUENTES</label>
+             <input type="text"><input type="text"><input type="text"><input type="text">
+            </div>
+            <div class="text-color">
+             <label for="fondo">FONDO</label>
+             <input type="color" name="color" id="color">
+             <label for="fondo">COLOR</label>
+             <input type="color" name="color" id="color">
+            </div>
+            <label for="text">fondo transparente</label>
+            <input type="checkbox">
+            <div>
+             <h3>CONTORNO</h3>
+             <button>Ninguno</button>
+             <button>Oscuro</button>
+             <button>Claro</button>
+             </div>
+             <label for="text">ESPACIADO</label>
+             <input type="text">
+             <label for="text">INTERLINEADO</label>
+            <input type="text">
+         </div>
        </aside>
      </main>
-    <script src="./js/main.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
 

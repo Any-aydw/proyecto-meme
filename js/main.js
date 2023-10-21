@@ -8,3 +8,18 @@ $ (".button-theme").addEventListener("click",() =>{
         $ ("body").setAttribute ("data-theme", "light-theme")
     }
 })
+$("#text").addEventListener("input", (e)=>{
+    $(".top-text").innerText = e.target.value
+})
+$("#text").addEventListener("input", (e)=>{
+    $("").innerText= e.target.value
+})
+$("#text").addEventListener("input", (e)=>{
+    $(".meme-image").style.backgroundImage=`url(${e.target.value})`
+})
+$("#color").addEventListener("input", (e)=>{
+    $(".meme-text1").style.backgroundColor= e.target.value
+})
+// $("#color").addEventListener("input", (e)=>{
+//     $(".top-text").style.color= e.target.value
+// })
