@@ -168,14 +168,14 @@
         align-items: center;
         gap: 10px;
     }
-    .btn-filtros{
+    #reset{
         margin-top: 30px;
         padding: 8px;
         background-color:var(--button-color-primary);
         color:var(--font-color-secondary);
         font-size: 1em; 
     }
-    .btn-filtros:hover{
+    #reset:hover{
         background-color: var(--background-primary) ;
         transition: all .3s ease;
     }
