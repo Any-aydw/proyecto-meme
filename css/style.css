@@ -50,7 +50,7 @@
     }
     .header-title{
         width: 100%;
-        font-size: 1 rem;
+        font-size: 2 rem;
         color:var(--font-color-primary);
         text-shadow:var(--background-tertiary) 2px 2px;
         justify-content: center;
@@ -88,17 +88,20 @@
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
-    .container-meme{
+    main{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-top: 20px;
     }
     .div-meme{
         width: 300px;
-        max-width: 80%;
+        max-width: 90%;
         height:300px ;
         background-color: var(--background-tertiary);
         display: flex;
+        justify-content: center;
         border: var(--background-tertiary) 2px solid ;
         flex-direction: column;
     }
@@ -106,21 +109,21 @@
 
         height: 20%;
         border: var(--background-tertiary) 2px solid ;
-        background-color:var(--background-quaternary) ;
-        text-align: center;
-    }
-    p{
-        font-size: 1em;
+        background-color:var(--background-quaternary);
+        padding: 5px;
     }
     .meme-image{
         height: 200px;
         width: 100%;
         border: var(--background-tertiary) 2px solid;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .meme-text2{
         height: 20%;
         border: var(--background-tertiary) solid;
         background-color: var(--background-quaternary);
+        padding: 5px;
     }
      aside{
         width: 80%;
@@ -131,6 +134,7 @@
         /* float:right;
         display:none; */
         font-size: 1em;
+        font-weight: bold;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,6 +155,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        color:var(--font-color-primary);
     }   
     .form-group-2{
         display: flex;
@@ -180,6 +185,12 @@
     .btn-download:hover{
         background-color: var(--button-color-hover-secondary) ;
         transition: all .3s ease;
+    }
+    h2{
+        font-size: 1 rem;
+        color:var(--font-color-primary) ;
+        padding: 30px;
+
     }
 }
 /* }
