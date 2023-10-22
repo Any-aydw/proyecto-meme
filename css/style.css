@@ -114,10 +114,12 @@
     }
     .meme-image{
         height: 200px;
-        width: 100%;
+        width: 90%;
         border: var(--background-tertiary) 2px solid;
         background-repeat: no-repeat;
         background-size: cover;
+        font-size: 2 em;
+        margin: 10px;
     }
     .meme-text2{
         height: 20%;
@@ -139,7 +141,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
     }
     .meme-panel-text{
        
@@ -150,6 +151,9 @@
         flex-direction:column;
         justify-content: center;
         align-items: center;
+        margin: 10px;
+        padding: 10px;
+        color: var(--font-color-secondary);
     }
     .form-group{
         display: flex;
@@ -165,7 +169,7 @@
         gap: 10px;
     }
     .btn-filtros{
-        margin: 20px;
+        margin-top: 30px;
         padding: 8px;
         background-color:var(--button-color-primary);
         color:var(--font-color-secondary);
@@ -190,7 +194,28 @@
         font-size: 1 rem;
         color:var(--font-color-primary) ;
         padding: 30px;
-
+    }
+    h3{
+        font-size: 1 em;
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .text-color{
+        padding: 20px;
+    }
+    .btn-contorno{
+        margin: 10px 5px;
+        padding: 8px;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
+        font-size: 1em; 
+    }
+    .btn-contorno:hover{
+        background-color: var(--background-primary) ;
+        transition: all .3s ease;
+    }
+    .check-txt{
+        margin: 15px;
     }
 }
 /* }
