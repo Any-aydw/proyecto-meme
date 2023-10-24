@@ -217,6 +217,10 @@
     .check-txt{
         margin: 15px;
     }
+    .text-number{
+       
+        width: 20%;
+    }
 }
 /* }
 @media screen and (min-width:672px){ */

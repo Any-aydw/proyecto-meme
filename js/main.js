@@ -52,18 +52,41 @@ $("#number").addEventListener("input", (e) =>{
     $(".bottom-text") .style .fontSize = `${e.target.value}px`
 })
 
-const allFiltersMeme = () => {
+$("#displayTopText").addEventListener ("input", (e) =>{
+    if (e.target.checked){
+        $(".meme-text1").style.display = "none"
+    }else{
+        $(".meme-text1").style.display = "block"
+    }
+})
+
+$("#displayBottomText").addEventListener ("input", (e) => {
+    if (e.target.checked){
+        $(".meme-text2").style.display = "none"
+    } else{
+        $(".meme-text2").style.display = "block"
+    }
+})
+
+$("#fondoTrans").addEventListener ("input", (e) =>{
+    if (e.targe.checked){
+        $(".meme-image").style.backgro    }
+} )
+
+
+const allFilterMeme = () => {
     $(".meme-image").style.filter = `brightness(${$("#brightness").value}) opacity(${$("#opacity").value}) contrast(${$("#contrast").value}%) blur(${$("#blur").value}px) grayscale(${$("#grayscale").value}%) sepia(${$("#sepia").value}%) hue-rotation(${$("#hue-rotation").value}deg) saturation(${$("#saturation").value}%) invert(${$("#invert").value})`
 }
-$("#opacity").addEventListener("input", allFiltersMeme)
-$("#brightness").addEventListener("input", allFiltersMeme)
-$("#contrast").addEventListener("input", allFiltersMeme)
-$("#blur").addEventListener("input", allFiltersMeme)
-$("#grayscale").addEventListener("input", allFiltersMeme)
-$("#sepia").addEventListener("input", allFiltersMeme)
-$("#hue-rotation").addEventListener("input", allFiltersMeme)
-$("#saturation").addEventListener("input", allFiltersMeme)
-$("#invert").addEventListener("input", allFiltersMeme)
+
+$("#opacity").addEventListener("input", allFilterMeme)
+$("#brightness").addEventListener("input", allFilterMeme)
+$("#contrast").addEventListener("input", allFilterMeme)
+$("#blur").addEventListener("input", allFilterMeme)
+$("#grayscale").addEventListener("input", allFilterMeme)
+$("#sepia").addEventListener("input", allFilterMeme)
+$("#hue-rotation").addEventListener("input", allFilterMeme)
+$("#saturation").addEventListener("input", allFilterMeme)
+$("#invert").addEventListener("input", allFilterMeme)
 
 // evento de boton reset no funciona ver
 // $("#reset").addEventListener ("click", () =>{

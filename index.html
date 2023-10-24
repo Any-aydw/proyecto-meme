@@ -46,29 +46,39 @@
           <div class="text-color">
            <label for="fondo">FONDO</label>
            <input type="color" name="color" id="color-text">
+           <select name="color-img" id="color-img">
+            <option value="">Ninguno</option>
+            <option value="">Aclarar</option>
+            <option value="">Oscurecer</option>
+            <option value="">Diferencia</option>
+            <option value="">Luminosidad</option>
+            <option value="">Multiplicar</option>
+           </select>
           </div>
          
           <h3>FILTROS</h3>
+         <form action="">
          <div class="form-group">
-          <label for="">Brillo</label>
-          <input type="range" name="range" id="brightness" min="0" max="1" step="0.1" value="1">
-          <label for="">Opacidad</label>
-          <input type="range" name="range" id="opacity" min="0" max="1" step="0.1" value="1">
-          <label for="">Contraste</label>
-          <input type="range" name="range" id="contrast" min="100%" max="1000%" step="1%" value="100%">
-          <label for="">Desenfoque</label>
-          <input type="range" name="range" id="blur" min="0px" max="10px" step="0.1px" value="0px">
-          <label for="">Escala de grises</label>
-          <input type="range" name="range" id="grayscale" min="0%" max="100%" step="1%" value="0%">
-          <label for="">Sepia</label>
-          <input type="range" name="range" id="sepia" min="0%" max="100%" step="1%" value="0%">
-          <label for="">Hue</label>
-          <input type="range" name="range" id="hue-rotation" min="0 deg" max="359 deg" step="1 deg" value="0 deg">
-          <label for="">Saturado</label>
-          <input type="range" name="range" id="saturation" min="100%" max="1000%" step="10%" value="100%">
-          <label for="">Negativo</label>
-          <input type="range" name="range" id="invert" min="0" max="1" step="0.1" value="1">
+           <label for="brightness">Brillo</label>
+           <input type="range" name="range" id="brightness" min="0" max="1" step="0.1" value="1">
+           <label for="opacity">Opacidad</label>
+           <input type="range" name="range" id="opacity" min="0" max="1" step="0.1" value="1">
+           <label for="contrast">Contraste</label>
+           <input type="range" name="range" id="contrast" min="100%" max="1000%" step="1%" value="100%">
+           <label for="blur">Desenfoque</label>
+           <input type="range" name="range" id="blur" min="0px" max="10px" step="0.1px" value="0px">
+           <label for="grayscale">Escala de grises</label>
+           <input type="range" name="range" id="grayscale" min="0%" max="100%" step="1%" value="0%">
+           <label for="sepia">Sepia</label>
+           <input type="range" name="range" id="sepia" min="0%" max="100%" step="1%" value="0%">
+           <label for="hue-rotation">Hue</label>
+           <input type="range" name="range" id="hue-rotation" min="0 deg" max="359 deg" step="1 deg" value="0 deg">
+           <label for="saturation">Saturado</label>
+           <input type="range" name="range" id="saturation" min="100%" max="1000%" step="10%" value="100%">
+           <label for="invert">Negativo</label>
+           <input type="range" name="range" id="invert" min="0" max="1" step="0.1" value="1">
         </div>
+        </form>
           <button id="reset">Restablecer Filtros</button>
       </aside>
       <!-- aside de Texto -->
@@ -79,11 +89,11 @@
            <input type="text" placeholder="Escribe el texto" name="text" id="toptext">
            <div class="check-txt">
              <label for="text">Suprimir texto superior</label>
-             <input type="checkbox" >
+             <input type="checkbox"id="displayTopText" >
            </div>
            <label for="text">BOTTOM TEXT</label>
            <input type="text" placeholder="Escribe el texto" name="text" id="bottext">
-           <div class="check-txt">
+           <div class="check-txt" id="displayBottomText">
              <label for="text">Suprimir texto inferior</label>
              <input type="checkbox" >
            </div> 
@@ -97,11 +107,11 @@
             </select>
             <div class="text-number">
               <input type="number" name="number" id="number" max="50" value="1">
-              <input type="text" name="text-number" id="text-number">
-              <input type="text" name="text-number" id="text-number">
-              <input type="text" name="text-number" id="text-number">
-            <div class="text-color">
+              <button></button>
+              <button></button>
+              <button></button>
             </div>
+            <div class="text-color">
               <label for="fondo">FONDO</label>
               <input type="color" name="color" id="color">
               <label for="fondo">COLOR</label>
@@ -109,7 +119,7 @@
             </div>
             <div class="check-txt">
               <label for="text">fondo transparente</label>
-              <input type="checkbox">
+              <input type="checkbox" id="fondoTrans">
             </div>
             <div>
                <h3>CONTORNO</h3>
