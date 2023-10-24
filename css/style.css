@@ -200,14 +200,36 @@
     .text-color{
         padding: 20px;
     }
-    .btn-contorno{
+    .btn-ninguno{
         margin: 10px 5px;
         padding: 8px;
         background-color:var(--button-color-primary);
         color:var(--font-color-secondary);
         font-size: 1em; 
     }
-    .btn-contorno:hover{
+    .btn-ninguno:hover{
+        background-color: var(--background-primary) ;
+        transition: all .3s ease;
+    }
+    .btn-oscuro{
+        margin: 10px 5px;
+        padding: 8px;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
+        font-size: 1em; 
+    }
+    .btn-oscuro:hover{
+        background-color: var(--background-primary) ;
+        transition: all .3s ease;
+    }
+    .btn-claro{
+        margin: 10px 5px;
+        padding: 8px;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
+        font-size: 1em; 
+    }
+    .btn-claro:hover{
         background-color: var(--background-primary) ;
         transition: all .3s ease;
     }
