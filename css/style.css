@@ -64,7 +64,15 @@
         align-items: center;
         gap:5px ;
     }
-    .button{
+    .button-panel-img{
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10%;
+        background-color:var(--button-color-primary);
+        color:var(--font-color-secondary);
+        font-size: 1em;
+    }
+    .button-panel-txt{
         margin: 5px;
         padding: 5px;
         border-radius: 10%;
@@ -117,7 +125,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         font-size: 2 em;
-       
     }
     .meme-text2{
         height: 20%;
@@ -125,15 +132,11 @@
         padding: 5px;
     }
      aside{
-        width: 80%;
-        max-width: 80%;
+        width: 90%;
+        max-width: 90%;
     }
     .meme-panel-image{
         
-        /* float:right;
-        display:none; */
-        
-     
         font-size: 1em;
         font-weight: bold;
         display: flex;
@@ -148,12 +151,10 @@
         font-family: Arial, Helvetica, sans-serif;
         border-radius: 5px;
         margin: 10px;
-        
     }
     .meme-panel-text{
-       
-        /* float:right;
-        display: none; */
+               
+        width: 90%;
         font-size: 1 em;
         display: flex;
         flex-direction:column;
@@ -176,7 +177,6 @@
         align-items: center;
         gap: 10px;
     }
-  
     #reset{
         margin-top: 30px;
         padding: 8px;
@@ -209,9 +209,7 @@
         margin-top: 30px;
         padding: 10px;
     }
-    .text-color{
-        padding: 20px;
-    }
+   
     .btn-ninguno{
         margin: 10px 5px;
         padding: 8px;
@@ -219,7 +217,6 @@
         color:var(--font-color-secondary);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1em; 
-      
     }
     .btn-ninguno:hover{
         background-color: var(--background-primary) ;
@@ -252,9 +249,34 @@
     .check-txt{
         margin: 15px;
     }
-    .text-number{
-       
-        width: 20%;
+    #font-number{
+        width: 80px;
+        height:30px ;
+        margin-top: 0;
+    }
+    .button-align{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 80px;
+        height: 50px;
+        padding: 10px;
+        gap: 5px;
+    }
+    .fa-align-left{
+        width: 30px;
+    }
+    .fa-align-right{
+        width:30px;
+    }
+    .fa-align-center{
+        width:30px ;
+    }
+    #text-padding{
+        width:90%;
+    }
+    #text-line{
+        width: 90%;
     }
 }
 /* }

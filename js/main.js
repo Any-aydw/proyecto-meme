@@ -1,4 +1,4 @@
-const $= (selector) => document.querySelector(selector)
+const $ = (selector) => document.querySelector(selector)
 
 $ (".button-theme").addEventListener("click",() =>{
     const currentTheme = $ ("body") .getAttribute("data-theme")
@@ -12,7 +12,7 @@ $("#toptext").addEventListener( "input", (e) => {
     $(".top-text").innerText = e.target.value
 })
 
-$("#bottext").addEventListener("input", (e)=>{
+$("#botttext").addEventListener("input", (e)=>{
    $(".bottom-text").innerText= e.target.value
 })
 
@@ -39,35 +39,31 @@ $("#color-font") .addEventListener("input", (e) => {
 $("#font").addEventListener("input", (e)=>{
     $(".top-text").style.fontFamily= e.target.value
 })
-
 $("#font").addEventListener("input", (e)=>{
     $(".bottom-text").style.fontFamily= e.target.value
 })
 
-$("#number").addEventListener("input", (e) =>{
+$("#font-number").addEventListener("input", (e) =>{
     $(".top-text") .style .fontSize = `${e.target.value}px`
 })
-
-$("#number").addEventListener("input", (e) =>{
+$("#font-number").addEventListener("input", (e) =>{
     $(".bottom-text") .style .fontSize = `${e.target.value}px`
 })
 
-$("#displayTopText").addEventListener ("input", (e) =>{
+$("#displayTopText").addEventListener("input", (e) =>{
     if (e.target.checked){
         $(".meme-text1").style.display = "none"
     }else{
         $(".meme-text1").style.display = "block"
     }
 })
-
-$("#displayBottomText").addEventListener ("input", (e) => {
+$("#displayBottomText").addEventListener("input", (e) => {
     if (e.target.checked){
         $(".meme-text2").style.display = "none"
     } else{
         $(".meme-text2").style.display = "block"
     }
 })
-
 $("#fondoTrans").addEventListener ("input", (e) =>{
     if (e.target.checked){
         $(".meme-text1").style.backgroundColor="transparent"
@@ -77,7 +73,7 @@ $("#fondoTrans").addEventListener ("input", (e) =>{
     }
     })
 
-$("#fondoTrans").addEventListener ("input", (e) =>{
+$("#fondoTrans").addEventListener ("input", (e) => {
     if (e.target.checked){
         $(".meme-text2").style.backgroundColor="transparent"
        
@@ -85,13 +81,72 @@ $("#fondoTrans").addEventListener ("input", (e) =>{
         
     }
     })    
+$("#text-line").addEventListener ("input", (e) => {
+    $(".meme-text1").style.lineHeight= e.target.value
+})
 
-// $("#btn-claro").addEventListener ("click", (e) => {
+$("#text-line").addEventListener ("input", (e) => {
+    $(".meme-text2").style.lineHeight= e.target.value
+})
 
-// $(".top-text").style.webkitTextStroke="white"
+$("#text-padding").addEventListener ("input", (e) => {
+    $(".meme-text1").style.padding = `${e.target.value}px`
+})
+$("#text-padding").addEventListener ("input", (e) => {
+    $(".meme-text2").style.padding = `${e.target.value}px`
+})
 
+$(".btn-claro").addEventListener ("click", (e) => {
+    $(".meme-text1").style.webkitTextStroke= "white 1px"
+})
+$(".btn-claro").addEventListener ("click", (e) => {
+    $(".meme-text2").style.webkitTextStroke= "white 1px"
+})
 
-// })   
+$(".btn-oscuro").addEventListener ("click", (e) => {
+    $(".meme-text1").style.webkitTextStroke= "black 1px"
+})
+$(".btn-oscuro").addEventListener ("click", (e) => {
+    $(".meme-text2").style.webkitTextStroke= "black 1px"
+})
+$(".btn-ninguno").addEventListener ("click", (e) => {
+    $(".meme-text1").style.webkitTextStroke= "none"
+})
+$(".btn-ninguno").addEventListener ("click", (e) => {
+    $(".meme-text2").style.webkitTextStroke= "none"
+})
+
+$("#color-img").addEventListener ("input", (e) => {
+    $("#meme").style.backgroundBlendMode= e.target.value
+})
+
+$("#align-left").addEventListener ("click", (e) => {
+    $(".top-text").style.textAlign="left"
+})
+
+$("#align-left").addEventListener ("click", (e) => {
+    $(".bottom-text").style.textAlign="left"
+})
+
+$("#align-right").addEventListener ("click", (e) => {
+    $(".top-text").style.textAlign="right"
+})
+
+$("#align-right").addEventListener ("click", (e) => {
+    $(".bottom-text").style.textAlign="right"
+})
+
+$("#align-center").addEventListener ("click", (e) => {
+    $(".top-text").style.textAlign="center"
+})
+
+$("#align-center").addEventListener ("click", (e) => {
+    $(".bottom-text").style.textAlign="center"
+})
+
+$("#button-panel-txt").addEventListener ("click", (e) => {
+    $()
+})
 
 const allFilterMeme = () => {
     const brightness = $("#brightness").value;
@@ -104,7 +159,7 @@ const allFilterMeme = () => {
     const saturation = $("#saturation").value;
     const invert = $("#invert").value;
 
-    $("#meme").style.filter =`brightness(${brightness}) opacity(${opacity}) contrast(${constrast}%) blur(${blur}px) grayscale(${grayscale}%) sepia(${sepia}%) hue-rotate(${hue}deg) saturate(${saturation}%) invert(${invert}%)` ;
+    $("#meme").style.filter =`brightness(${brightness}) opacity(${opacity}) contrast(${constrast}%) blur(${blur}px) grayscale(${grayscale}%) sepia(${sepia}%) hue-rotate(${hue}deg) saturate(${saturation}%) invert(${invert}%)`;
 }
 
 $("#blur").addEventListener("change", allFilterMeme)
@@ -119,16 +174,16 @@ $("#invert").addEventListener("change", allFilterMeme)
 
 
 
-// evento de boton reset no funciona ver
- $("#reset").addEventListener ("click", () =>{
- $("#opacity").value = "1"
+// evento de boton reset 
+$("#reset").addEventListener ("click", () =>{
+$("#opacity").value = "1"
 $("#brightness").value ="1"
-$("#contrast").value ="100%"
- $("#blur").value="0px"
-     $("#grayscale").value="0%"
-     $("#sepia").value ="0%"
-   $("#hue-rotation").value="0 deg"
-     $("#saturation").value="100%"
-     $("#invert").value="1"
-     $("#meme").style.filter="none"
+$("#contrast").value ="100"
+$("#blur").value="0"
+$("#grayscale").value="0"
+$("#sepia").value ="0"
+$("#hue-rotation").value="0"
+$("#saturation").value="100"
+$("#invert").value="1"
+$("#meme").style.filter="none"
  })

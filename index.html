@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="proyecto, desarrolladora web, generador de memes,frontend">
@@ -11,28 +11,28 @@
     <meta property="og title" content="Proyecto-meme">
      <link rel="stylesheet" href="./css/style.css">
     <title>Proyecto-meme</title>
-</head>
-<body >
+ </head>
+ <body >
     <!-- Header -->
     <header class="header">
       <div class="header-title">
        <h1>Generador de memes</h1>
       </div>
       <div class="container-button">
-        <button class="button" >Imagen</button>
-        <button class="button">Texto</button>
+        <button class="button-panel-img" >Imagen</button>
+        <button class="button-panel-txt">Texto</button>
         <button class="button-theme">Modo oscuro</button >
       </div>
     </header>
     <main>
       <!-- Contenedor divs  meme -->
-          <div class="div-meme" >
-            <div class="meme-text1">
+          <div class="div-meme" id="div-meme">
+            <div class="meme-text1" id="meme-text1">
               <p class="top-text">TOP TEXT</p>
             </div>
             <div class="meme-image" id="meme">
             </div>
-            <div class="meme-text2">
+            <div class="meme-text2" id="meme-text2">
               <p class="bottom-text">BOTTOM TEXT</p>
             </div>
           </div>
@@ -43,15 +43,16 @@
           <h2>Imagen</h2>
           <label for="URL">URL</label>
           <input type="text" name="text" placeholder="Inserte url de imagen" id="text">
+          <div class="fondo-color">
            <label for="fondo">FONDO</label>
            <input type="color" name="color" id="color-text">
            <select name="color-img" id="color-img">
-            <option value="">Ninguno</option>
-            <option value="">Aclarar</option>
-            <option value="">Oscurecer</option>
-            <option value="">Diferencia</option>
-            <option value="">Luminosidad</option>
-            <option value="">Multiplicar</option>
+            <option value="none">Ninguno</option>
+            <option value="lighten">Aclarar</option>
+            <option value="darken">Oscurecer</option>
+            <option value="difference">Diferencia</option>
+            <option value="luminosity">Luminosidad</option>
+            <option value="multiply">Multiplicar</option>
            </select>
           </div>
          <!-- filtros -->
@@ -89,7 +90,7 @@
              <input type="checkbox"id="displayTopText" >
            </div>
            <label for="text">BOTTOM TEXT</label>
-           <input type="text" placeholder="Escribe el texto" name="text" id="bottext">
+           <input type="text" placeholder="Escribe el texto" name="text" id="botttext">
            <div class="check-txt" id="displayBottomText">
              <label for="text">Suprimir texto inferior</label>
              <input type="checkbox" >
@@ -102,11 +103,12 @@
             <option value="Lucida Sans">Lucida Sans </option>
             <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
             </select>
-            <div class="text-number">
-              <input type="number" name="number" id="number" max="50" value="1">
-              <button></button>
-              <button></button>
-              <button></button>
+            <div class="button-align" id="button-align">  
+              <input type="number" name="font-number" id="font-number" max="50" value="1">
+              <button id="align-left"><i class="fa-solid fa-align-left"></i></button>
+              <button id="align-right"><i class="fa-solid fa-align-right"></i></button>
+              <button id="align-center"><i class="fa-solid fa-align-center"></i></button>
+            
             </div>
             <div class="text-color">
               <label for="fondo">FONDO</label>
@@ -126,14 +128,26 @@
             </div>
 
             <label for="text">ESPACIADO</label>
-             <input type="number" name="number" id="number">
+             <input type="number" name="text-padding" id="text-padding" min="10" max="50" value="10">
              <label for="text">INTERLINEADO</label>
-            <input type="number" name="number" id="number">
+            <select name="text-line" id="text-line">
+              <option value="0.8">0.8</option>
+              <option value="1">1</option>
+              <option value="1.2">1.2</option>
+              <option value="1.5">1.5</option>
+              <option value="2">2</option>
+              <option value="2.5">2.5</option>
+            </select>
          </div>
        </aside>
      </main>
-<script src="./js/main.js"></script>
-</body>
+    <script src="https://kit.fontawesome.com/2b6a9b92d0.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+  
+  
+  
+  
+  </body>
 </html>
 
 
