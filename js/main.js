@@ -145,7 +145,6 @@ $("#align-center").addEventListener ("click", (e) => {
 })
 
 
-
  const downloadMeme = () => {
      domtoimage.toBlob($("#meme")).then((blob) => {
        saveAs(blob, "my-meme.png")
