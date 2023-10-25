@@ -144,9 +144,14 @@ $("#align-center").addEventListener ("click", (e) => {
     $(".bottom-text").style.textAlign="center"
 })
 
-$("#button-panel-txt").addEventListener ("click", (e) => {
-    $()
-})
+
+
+ const downloadMeme = () => {
+     domtoimage.toBlob($("#meme")).then((blob) => {
+       saveAs(blob, "my-meme.png")
+    })
+ }
+  $(".btn-download").addEventListener("click", downloadMeme)
 
 const allFilterMeme = () => {
     const brightness = $("#brightness").value;

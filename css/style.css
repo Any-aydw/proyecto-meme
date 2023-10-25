@@ -73,6 +73,7 @@
         font-size: 1em;
     }
     .button-panel-txt{
+        
         margin: 5px;
         padding: 5px;
         border-radius: 10%;
@@ -134,9 +135,9 @@
      aside{
         width: 90%;
         max-width: 90%;
-    }
+     } 
     .meme-panel-image{
-        
+       
         font-size: 1em;
         font-weight: bold;
         display: flex;
@@ -153,7 +154,7 @@
         margin: 10px;
     }
     .meme-panel-text{
-               
+            
         width: 90%;
         font-size: 1 em;
         display: flex;
