@@ -17,16 +17,16 @@
     <header class="header">
       <div class="header-title">
        <h1>Generador de memes</h1>
-      </div>  
+      </div>
       <div class="container-button">
         <button class="button" >Imagen</button>
         <button class="button">Texto</button>
         <button class="button-theme">Modo oscuro</button >
       </div>
-    </header> 
+    </header>
     <main>
       <!-- Contenedor divs  meme -->
-          <div class="div-meme" > 
+          <div class="div-meme" >
             <div class="meme-text1">
               <p class="top-text">TOP TEXT</p>
             </div>
@@ -36,14 +36,13 @@
               <p class="bottom-text">BOTTOM TEXT</p>
             </div>
           </div>
-    
+
         <button class="btn-download">descargar meme</button>
         <!-- aside Imagen -->
       <aside class="meme-panel-image">
           <h2>Imagen</h2>
           <label for="URL">URL</label>
-          <input type="text" name="text" id="text">
-          <div class="text-color">
+          <input type="text" name="text" placeholder="Inserte url de imagen" id="text">
            <label for="fondo">FONDO</label>
            <input type="color" name="color" id="color-text">
            <select name="color-img" id="color-img">
@@ -55,10 +54,9 @@
             <option value="">Multiplicar</option>
            </select>
           </div>
-         
+         <!-- filtros -->
           <h3>FILTROS</h3>
-         <form action="">
-         <!-- <div class="form-group">
+          <div class="form-group">
            <label for="brightness">Brillo</label>
            <input type="range" name="range" id="brightness" min="0" max="1" step="0.1" value="1">
            <label for="opacity">Opacidad</label>
@@ -71,34 +69,13 @@
            <input type="range" name="range" id="grayscale" min="0" max="100" step="1" value="0">
            <label for="sepia">Sepia</label>
            <input type="range" name="range" id="sepia" min="0" max="100" step="1" value="0">
-           <label for="hue-rotate">Hue</label>
-           <input type="range" name="range" id="hue-rotation" min="0 " max="359" step="1" value="0">
-           <label for="saturate">Saturado</label>
-           <input type="range" name="range" id="saturate" min="1%" max="100" step="10" value="100">
+           <label for="hue-rotation">Hue</label>
+           <input type="range" name="range" id="hue-rotation" min="0" max="359" step="1" value="0">
+           <label for="saturation">Saturado</label>
+           <input type="range" name="range" id="saturation" min="1" max="100" step="10" value="100">
            <label for="invert">Negativo</label>
            <input type="range" name="range" id="invert" min="0" max="1" step="0.1" value="1">
-        </div>
-        </form> -->
-        <div class="form-group">
-          <label for="brightness">Brillo</label>
-          <input type="range" name="range" id="brightness" min="0" max="1" step="0.1" value="1">
-          <label for="opacity">Opacidad</label>
-          <input type="range" name="range" id="opacity" min="0" max="1" step="0.1" value="1">
-          <label for="contrast">Contraste</label>
-          <input type="range" name="range" id="contrast" min="1" max="100" step="1" value="100">
-          <label for="blur">Desenfoque</label>
-          <input type="range" name="range" id="blur" min="0" max="10" step="0.1" value="0">
-          <label for="grayscale">Escala de grises</label>
-          <input type="range" name="range" id="grayscale" min="0" max="100" step="1" value="0">
-          <label for="sepia">Sepia</label>
-          <input type="range" name="range" id="sepia" min="0" max="100" step="1" value="0">
-          <label for="hue-rotation">Hue</label>
-          <input type="range" name="range" id="hue-rotation" min="0" max="359" step="1" value="0">
-          <label for="saturation">Saturado</label>
-          <input type="range" name="range" id="saturation" min="1" max="100" step="10" value="100">
-          <label for="invert">Negativo</label>
-          <input type="range" name="range" id="invert" min="0" max="1" step="0.1" value="1">
-       </div>
+          </div>
           <button id="reset">Restablecer Filtros</button>
       </aside>
       <!-- aside de Texto -->
@@ -116,7 +93,7 @@
            <div class="check-txt" id="displayBottomText">
              <label for="text">Suprimir texto inferior</label>
              <input type="checkbox" >
-           </div> 
+           </div>
            <label for="text">FUENTE</label>
             <select name="font" id="font">
             <option value="Times New Roman">Selecciona</option>
@@ -147,7 +124,7 @@
                <button class="btn-oscuro">Oscuro</button>
                <button class="btn-claro">Claro</button>
             </div>
-                               
+
             <label for="text">ESPACIADO</label>
              <input type="number" name="number" id="number">
              <label for="text">INTERLINEADO</label>
