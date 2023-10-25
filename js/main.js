@@ -93,39 +93,44 @@ $("#fondoTrans").addEventListener ("input", (e) =>{
 
 // })   
 
+const allFilterMeme = () => {
+    const brightness = $("#brightness").value;
+    const opacity = $("#opacity").value;
+    const constrast = $("#contrast").value;
+    const blur = $("#blur").value;
+    const grayscale = $("#grayscale").value;
+    const sepia = $("#sepia").value;
+    const hue = $("#hue-rotation").value;
+    const saturation = $("#saturation").value;
+    const invert = $("#invert").value;
 
-// pruebas de filter
-// const allFilterMeme = () => {
-//     $(".meme-image").style.filter = ` brightness(${$("#brightness").value}) opacity(${$("#opacity").value})`
-//  }
+    $("#meme").style.filter =`brightness(${brightness}) opacity(${opacity}) contrast(${constrast}%) blur(${blur}px) grayscale(${grayscale}%) sepia(${sepia}%) hue-rotate(${hue}deg) saturate(${saturation}%) invert(${invert}%)` ;
+}
 
-// $("#opacity").addEventListener("input", allFilterMeme)
-// $("#brightness").addEventListener("input", allFilterMeme)
-
-
-
-
-// $("#blur").addEventListener("input", allFilterMeme)
-// $("#grayscale").addEventListener("change", allFilterMeme)
-// $("#sepia").addEventListener("change", allFilterMeme)
-// $("#hue-rotation").addEventListener("change", allFilterMeme)
-// $("#saturation").addEventListener("change", allFilterMeme)
-// $("#invert").addEventListener("change", allFilterMeme)
+$("#blur").addEventListener("change", allFilterMeme)
+$("#brightness").addEventListener("change", allFilterMeme)
+$("#opacity").addEventListener("change", allFilterMeme)
+$("#contrast").addEventListener("change", allFilterMeme)
+$("#grayscale").addEventListener("change", allFilterMeme)
+$("#sepia").addEventListener("change", allFilterMeme)
+$("#hue-rotation").addEventListener("change", allFilterMeme)
+$("#saturation").addEventListener("change", allFilterMeme)
+$("#invert").addEventListener("change", allFilterMeme)
 
 // forma de probar range
-const allFilterMeme = () => {
-const brightness = $("#brightness").value;
-const opacity = $("#opacity").value;
-const constrast = $("#contrast").value;
-const blur = $("#blur").value;
-const grayscale = $("#grayscale").value;
-const sepia = $("#sepia").value;
-const hue = $("#hue-rotation").value;
-const saturation = $("#saturation").value;
-const invert = $("#invert").value;
+// const allFilterMeme = () => {
+// const brightness = $("#brightness").value;
+// const opacity = $("#opacity").value;
+// const constrast = $("#contrast").value;
+// const blur = $("#blur").value;
+// const grayscale = $("#grayscale").value;
+// const sepia = $("#sepia").value;
+// const hue = $("#hue-rotation").value;
+// const saturation = $("#saturation").value;
+// const invert = $("#invert").value;
 
-$(".meme-image").style.filter = `brightness(${brightness}) opacity(${opacity}) constrast(${constrast}%) blur(${blur}px) grayscale(${grayscale}%) sepia(${sepia}%) hue-rotation(${hue}) saturation(${saturation}) invert(${invert})`;
-}
+// $(".meme-image").style.filter = `brightness(${brightness}) opacity(${opacity}) constrast(${constrast}%) blur(${blur}px) grayscale(${grayscale}%) sepia(${sepia}%) hue-rotation(${hue}) saturation(${saturation}) invert(${invert})`;
+// }
 
 // evento de boton reset no funciona ver
 // $("#reset").addEventListener ("click", () =>{
