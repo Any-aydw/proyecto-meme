@@ -137,6 +137,8 @@
         max-width: 90%;
      } 
     .meme-panel-image{
+        width: 90%;
+        z-index: 1;
         font-size: 1em;
         font-weight: bold;
         display: flex;
@@ -276,6 +278,9 @@
     }
     #text-line{
         width: 90%;
+    }
+    .visibility--hidden{
+        display: none;
     }
 }
 

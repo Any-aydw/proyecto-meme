@@ -144,6 +144,10 @@ $("#align-center").addEventListener ("click", (e) => {
     $(".bottom-text").style.textAlign="center"
 })
 
+ $(".button-panel-img") .addEventListener ("click", (e) => {
+ $("#meme-panel-image").classList.Toggle (".visibility--hidden")
+
+ })
 
  const downloadMeme = () => {
      domtoimage.toBlob($(".div-meme")).then((blob) => {
