@@ -64,23 +64,22 @@ $("#displayBottomText").addEventListener("input", (e) => {
         $(".meme-text2").style.display = "block"
     }
 })
+
+$("#fondoTrans").addEventListener ("input", (e) =>{
+   if (e.target.checked){
+    $(".meme-text1").style.backgroundColor="transparent"
+    } else{
+        $(".meme-text1").style.backgroundColor="var(--background-quaternary)"
+   }
+  })
 $("#fondoTrans").addEventListener ("input", (e) =>{
     if (e.target.checked){
-        $(".meme-text1").style.backgroundColor="transparent"
-   
-    } else{
-        
+     $(".meme-text2").style.backgroundColor="transparent"
+     } else{
+         $(".meme-text2").style.backgroundColor="var(--background-quaternary)"
     }
-    })
+   })
 
-$("#fondoTrans").addEventListener ("input", (e) => {
-    if (e.target.checked){
-        $(".meme-text2").style.backgroundColor="transparent"
-       
-    } else{
-        
-    }
-    })    
 $("#text-line").addEventListener ("input", (e) => {
     $(".meme-text1").style.lineHeight= e.target.value
 })
@@ -144,10 +143,20 @@ $("#align-center").addEventListener ("click", (e) => {
     $(".bottom-text").style.textAlign="center"
 })
 
- $(".button-panel-img") .addEventListener ("click", (e) => {
- $("#meme-panel-image").classList.Toggle (".visibility--hidden")
+$(".button-panel-img").addEventListener ("click", (e) => {
+    if (e.target.click){
+      $("#meme-panel-image").classList.remove("visibility--hidden")
+      $("#meme-panel-text").classList.add("visibility--hidden")
+    }
+})
+$(".button-panel-txt").addEventListener ("click", (e) => {
+    if (e.target.click){
+      
+      $("#meme-panel-text").classList.remove("visibility--hidden")
+      $("#meme-panel-image").classList.add("visibility--hidden")
+    }
+})
 
- })
 
  const downloadMeme = () => {
      domtoimage.toBlob($(".div-meme")).then((blob) => {
