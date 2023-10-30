@@ -1,5 +1,5 @@
 const $ = (selector) => document.querySelector(selector)
-
+// modo oscuro y modo claro
 $ (".button-theme").addEventListener("click",() =>{
     const currentTheme = $ ("body") .getAttribute("data-theme")
     if (currentTheme){
@@ -8,6 +8,7 @@ $ (".button-theme").addEventListener("click",() =>{
         $ ("body").setAttribute ("data-theme", "light-theme")
     }
 })
+// texto e imagen
 $("#toptext").addEventListener( "input", (e) => {
     $(".top-text").innerText = e.target.value
 })
@@ -157,14 +158,14 @@ $(".button-panel-txt").addEventListener ("click", (e) => {
     }
 })
 
-
+// boton de descarga
  const downloadMeme = () => {
      domtoimage.toBlob($(".div-meme")).then((blob) => {
        saveAs(blob, "my-meme.png")
     })
  }
   $(".btn-download").addEventListener("click", downloadMeme)
-
+// filtros
 const allFilterMeme = () => {
     const brightness = $("#brightness").value;
     const opacity = $("#opacity").value;
@@ -191,7 +192,7 @@ $("#invert").addEventListener("change", allFilterMeme)
 
 
 
-// evento de boton reset 
+// evento de boton reset de filtros 
 $("#reset").addEventListener ("click", () =>{
 $("#opacity").value = "1"
 $("#brightness").value ="1"
