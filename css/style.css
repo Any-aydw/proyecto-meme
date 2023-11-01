@@ -332,6 +332,13 @@
         width: 90%;
         margin-bottom: 30px;
     }
+    .button-close-img{
+        
+       margin-right: -80px;
+       width: 30px;
+       background-color: var(--background-primary);
+       font-size: 30px;
+    }
     .visibility--hidden{
         display: none;
     }

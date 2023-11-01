@@ -73,10 +73,11 @@ $("#fondoTrans").addEventListener ("input", (e) =>{
         $(".meme-text1").style.backgroundColor="var(--background-quaternary)"
    }
   })
-$("#fondoTrans").addEventListener ("input", (e) =>{
-    if (e.target.checked){
+
+  $("#fondoTrans").addEventListener ("input", (e) =>{
+   if (e.target.checked){
      $(".meme-text2").style.backgroundColor="transparent"
-     } else{
+    } else{
          $(".meme-text2").style.backgroundColor="var(--background-quaternary)"
     }
    })
@@ -84,65 +85,56 @@ $("#fondoTrans").addEventListener ("input", (e) =>{
 $("#text-line").addEventListener ("input", (e) => {
     $(".meme-text1").style.lineHeight= e.target.value
 })
-
-$("#text-line").addEventListener ("input", (e) => {
-    $(".meme-text2").style.lineHeight= e.target.value
-})
+ $("#text-line").addEventListener ("input", (e) => {
+   $(".meme-text2").style.lineHeight= e.target.value
+ })
 
 $("#text-padding").addEventListener ("input", (e) => {
     $(".meme-text1").style.padding = `${e.target.value}px`
 })
-$("#text-padding").addEventListener ("input", (e) => {
-    $(".meme-text2").style.padding = `${e.target.value}px`
-})
+ $("#text-padding").addEventListener ("input", (e) => {
+  $(".meme-text2").style.padding = `${e.target.value}px`
+ })
 
 $(".btn-claro").addEventListener ("click", (e) => {
     $(".meme-text1").style.webkitTextStroke= "white 1px"
 })
 $(".btn-claro").addEventListener ("click", (e) => {
     $(".meme-text2").style.webkitTextStroke= "white 1px"
-})
+ })
 
-$(".btn-oscuro").addEventListener ("click", (e) => {
-    $(".meme-text1").style.webkitTextStroke= "black 1px"
-})
-$(".btn-oscuro").addEventListener ("click", (e) => {
-    $(".meme-text2").style.webkitTextStroke= "black 1px"
-})
-$(".btn-ninguno").addEventListener ("click", (e) => {
-    $(".meme-text1").style.webkitTextStroke= "none"
-})
-$(".btn-ninguno").addEventListener ("click", (e) => {
-    $(".meme-text2").style.webkitTextStroke= "none"
-})
+// $(".btn-oscuro").addEventListener ("click", (e) => {
+//     $(".meme-text1, .meme-text2").style.webkitTextStroke= "black 1px"
+// })
+// // $(".btn-oscuro").addEventListener ("click", (e) => {
+// //     $(".meme-text2").style.webkitTextStroke= "black 1px"
+// // })
+// $(".btn-ninguno").addEventListener ("click", (e) => {
+//     $(".meme-text1, .meme-text2").style.webkitTextStroke= "none"
+// })
+// $(".btn-ninguno").addEventListener ("click", (e) => {
+//     $(".meme-text2").style.webkitTextStroke= "none"
+// })
 
 $("#color-img").addEventListener ("input", (e) => {
     $("#meme").style.backgroundBlendMode= e.target.value
 })
 
-$("#align-left").addEventListener ("click", (e) => {
-    $(".top-text").style.textAlign="left"
-})
 
-$("#align-left").addEventListener ("click", (e) => {
-    $(".bottom-text").style.textAlign="left"
-})
+// corregir
+// $("#align-left").addEventListener ("click", (e) => {
+//     $(".top-text, .bottom-text").style.textAlign="left"
+// })
 
-$("#align-right").addEventListener ("click", (e) => {
-    $(".top-text").style.textAlign="right"
-})
+// $("#align-right").addEventListener ("click", (e) => {
+//     $("top-text, .bottom-text").style.textAlign="right"
+// })
 
-$("#align-right").addEventListener ("click", (e) => {
-    $(".bottom-text").style.textAlign="right"
-})
 
-$("#align-center").addEventListener ("click", (e) => {
-    $(".top-text").style.textAlign="center"
-})
 
-$("#align-center").addEventListener ("click", (e) => {
-    $(".bottom-text").style.textAlign="center"
-})
+// $("#align-center").addEventListener ("click", (e) => {
+//     $(".top-text, .bottom-text").style.textAlign="center"
+// })
 
 $(".button-panel-img").addEventListener ("click", (e) => {
     if (e.target.click){
@@ -157,6 +149,7 @@ $(".button-panel-txt").addEventListener ("click", (e) => {
       $("#meme-panel-image").classList.add("visibility--hidden")
     }
 })
+
 
 // boton de descarga
  const downloadMeme = () => {
