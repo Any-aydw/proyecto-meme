@@ -148,22 +148,20 @@
         padding: 5px;
     }
     aside{
-        /* position: absolute;
-        z-index: 1; */
+        position: absolute;
+        z-index: 1; 
         width: 100%;
-        max-width: 100%;
+        max-width: 90%;
         background-color: var(--background-primary);
-        margin-top: -10px;
+        margin-top: 150px;
     }  
     .meme-panel-image{
-        font-size: 1em;
+        font-size: 10px;
         font-weight: bold;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 0;
-        margin: 10px;
         padding: 10px;
         color: var(--font-color-secondary);
     }
@@ -173,6 +171,7 @@
         font-family: Arial, Helvetica, sans-serif;
         border-radius: 5px;
         margin: 5px;
+        text-align: center;
     }
     .meme-image{
         height: 400px;
@@ -189,7 +188,6 @@
         justify-content: center;
         align-items: center;
         margin-top: 0;
-        margin: 10px;
         padding: 10px;
         color: var(--font-color-secondary);
     }
@@ -201,14 +199,15 @@
         width: 90%;
     }
     .form-group{
-        display: flex;
-        flex-direction: column;
+        width: 70%;
+        text-align: center;
+        font-size: 10px;
         gap: 5px;
         color:var(--font-color-primary);
-        justify-content: center;
-        align-items: center;
+        
     }   
     .form-group-2{
+        font-size: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -241,14 +240,20 @@
     #color-text{
         width: 40px;
     }
+    .meme-title{
+        padding: 20px;
+        margin: -10px;
+    }
     h2{
+        display: inline;
         font-size:20px;
         color:var(--font-color-primary) ;
         padding: 10px;
+       margin-right: -40px;
     }
     h3{
-        font-size: 1 em;
-        margin-top: 20px;
+        font-size: 20px;
+        margin-top: 10px;
         padding:10px;
     }
     .btn-ninguno{
@@ -333,11 +338,18 @@
         margin-bottom: 30px;
     }
     .button-close-img{
-        
-       margin-right: -80px;
-       width: 30px;
-       background-color: var(--background-primary);
-       font-size: 30px;
+       margin-right: -240px;
+       margin-top: 10px;
+       background-color: transparent;
+       border: none;
+       font-size: 40px;
+    }
+    .button-close-txt{
+        margin-right: -240px;
+        margin-top: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
     }
     .visibility--hidden{
         display: none;

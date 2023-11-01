@@ -96,10 +96,10 @@ $("#text-padding").addEventListener ("input", (e) => {
   $(".meme-text2").style.padding = `${e.target.value}px`
  })
 
-$(".btn-claro").addEventListener ("click", (e) => {
+$(".btn-claro").addEventListener ("click", () => {
     $(".meme-text1").style.webkitTextStroke= "white 1px"
 })
-$(".btn-claro").addEventListener ("click", (e) => {
+$(".btn-claro").addEventListener ("click", () => {
     $(".meme-text2").style.webkitTextStroke= "white 1px"
  })
 
@@ -144,12 +144,20 @@ $(".button-panel-img").addEventListener ("click", (e) => {
 })
 $(".button-panel-txt").addEventListener ("click", (e) => {
     if (e.target.click){
-      
       $("#meme-panel-text").classList.remove("visibility--hidden")
       $("#meme-panel-image").classList.add("visibility--hidden")
     }
 })
-
+$(".button-close-txt").addEventListener ("click", (e) => {
+   if (e.target.click){
+      $( "#meme-panel-text").classList.add ("visibility--hidden")
+   }
+})
+$(".button-close-img").addEventListener ("click", (e) => {
+    if (e.target.click){
+       $( "#meme-panel-image").classList.add ("visibility--hidden")
+    }
+ })
 
 // boton de descarga
  const downloadMeme = () => {
