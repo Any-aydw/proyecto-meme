@@ -503,6 +503,9 @@
         font-size: 1px;
        opacity: 0;
     }
+    .visibility--hidden{
+        display: none;
+    }
 }
 @media screen and (min-width:900px){
     .container-meme{
@@ -514,7 +517,11 @@
         margin-top: 600px;
         margin-right: 320px;
      }
+     .visibility--hidden{
+        display: none;
+    }
 }
+
 @media screen and (min-width:1200px){
        .container-meme{
         display: flex;
@@ -582,7 +589,7 @@
     h1{
         font-size:4 rem;
     }
-    .button-panel-img{
+    .button-panel-img {
         margin: 5px;
         padding: 10px;
         border-radius: 10%;
@@ -590,7 +597,7 @@
         color:var(--font-color-secondary);
         font-size: 2 em;
     }
-    .button-panel-img:hover{
+    .button-panel-img: hover {
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
@@ -602,10 +609,11 @@
         color:var(--font-color-secondary);
         font-size: 1em;
     }
-    .button-panel-txt:hover{
+    .button-panel-txt: hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
+    
     .button-theme{
         margin: 5px;
         padding: 10px;
@@ -614,15 +622,19 @@
         color:var(--font-color-secondary);
         font-size: 1em;
     }
-    .button:hover{
+    .button: hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
-    .button-theme:hover{
+    .button-theme: hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
+    }
+    .visibility--hidden{
+        display: none;
     }
 }
+
 @media screen and (min-width: 1400px){
     .container-meme{
         display: flex;
@@ -648,11 +660,10 @@
         max-width:20%;
         margin-left: auto;
         margin-top:650px;
-        background-color: var(--background-primary);
         font-size: 1 em;
-        border: solid 2px var();
-    }
 }
+}
+
 @media screen and (min-width: 1400px){
     .container-meme{
         display: flex;
@@ -680,6 +691,8 @@
         margin-top:650px;
         background-color: var(--background-primary);
         font-size: 1 em;
-        border: solid 2px var();
-    }
+ }
+ .visibility--hidden{
+    display: none;
+}
 }
