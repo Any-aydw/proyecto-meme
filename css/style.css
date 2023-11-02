@@ -523,7 +523,7 @@
 }
 
 @media screen and (min-width:1200px){
-       .container-meme{
+    .container-meme{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -556,7 +556,7 @@
         margin-top:750px;
         background-color: var(--background-primary);
         font-size: 1 em;
-        border: solid 2px var();
+        border: solid 2px var(--border-color);
     }
     .meme-panel-image{
         font-size: 1em;
@@ -597,7 +597,7 @@
         color:var(--font-color-secondary);
         font-size: 2 em;
     }
-    .button-panel-img: hover {
+    .button-panel-img:hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
@@ -609,11 +609,10 @@
         color:var(--font-color-secondary);
         font-size: 1em;
     }
-    .button-panel-txt: hover{
+    .button-panel-txt:hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
-    
     .button-theme{
         margin: 5px;
         padding: 10px;
@@ -622,11 +621,11 @@
         color:var(--font-color-secondary);
         font-size: 1em;
     }
-    .button: hover{
+    .button:hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
-    .button-theme: hover{
+    .button-theme:hover{
         background-color: var(--button-color-hover-primary);
         transition: all .3s ease;
     }
@@ -664,7 +663,7 @@
 }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1600px){
     .container-meme{
         display: flex;
         flex-direction: column;
